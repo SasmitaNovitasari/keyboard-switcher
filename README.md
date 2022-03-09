@@ -11,8 +11,8 @@ Please do not run keyboard.sh before you follow this instruction
 5. Open keyboard.sh in editor file
 
 ```
-icon_on="/YOUR_PATH/ubuntu-keyboard-switcher/icon/on.png"
-icon_off="/YOUR_PATH/ubuntu-keyboard-switcher/icon/off.png"
+icon_on="/YOUR_PATH/keyboard-switcher/icon/on.png"
+icon_off="/YOUR_PATH/keyboard-switcher/icon/off.png"
 fconfig=".keyboard"
 id=18 // Change this with your keyboard id
 master_id=3 // This for slave keyboard
@@ -26,9 +26,9 @@ Edit keyboard.desktop file
 Version=1.3
 Type=Application
 Name=Keyboard Switcher
-Icon=/YOUR_PATH/ubuntu-keyboard-switcher/icon/keyboard.png
-Exec=/YOUR_PATH/ubuntu-keyboard-switcher/keyboard.sh
-Path=/YOUR_PATH/ubuntu-keyboard-switcher
+Icon=/YOUR_PATH/keyboard-switcher/icon/keyboard.png
+Exec=/YOUR_PATH/keyboard-switcher/keyboard.sh
+Path=/YOUR_PATH/keyboard-switcher
 NoDisplay=false
 Categories=Utility;
 StartupNotify=false
@@ -40,3 +40,19 @@ Save file and copy to
 ~/.local/share/applications
 ```
 You'll see launcher icon and now it ready to use
+
+# Enable/disable manually
+For check id and master id
+```
+xinput list
+```
+
+For disable
+```
+xinput float <id>
+```
+
+For enable
+```
+xinput reattach <id> <master_id>
+```
