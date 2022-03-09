@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.3
+Type=Application
+Name=Keyboard Switcher
+Icon=/home/sasmitadn/keyboard-switcher/icon/keyboard.png
+Exec=/home/sasmitadn/keyboard-switcher/keyboard.sh
+Path=/home/sasmitadn/keyboard-switcher
+NoDisplay=false
+Categories=Utility;
+StartupNotify=false
+Terminal=false
