@@ -10,7 +10,7 @@ Please do not run keyboard.sh before you follow this instruction
 4. chmod +x keyboard.sh to change script permission
 5. Open keyboard.sh in editor file
 
-```
+```bash
 icon_on="/YOUR_PATH/keyboard-switcher/icon/on.png"
 icon_off="/YOUR_PATH/keyboard-switcher/icon/off.png"
 fconfig=".keyboard"
@@ -18,10 +18,11 @@ id=18 // Change this with your keyboard id
 master_id=3 // This for slave keyboard
 ```
 
-Please do not put ubuntu-keyboard-switcher directory to root
-Edit keyboard.desktop file
+Please do not put ubuntu-keyboard-switcher directory to root folder.
 
-```
+Now edit **keyboard.desktop** file
+
+```desktop
 [Desktop Entry]
 Version=1.3
 Type=Application
